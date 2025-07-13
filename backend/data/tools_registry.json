@@ -1,0 +1,28 @@
+[
+  {
+    "id": "math-agent-1",
+    "name": "Math Agent",
+    "description": "Performs basic math operations (add, multiply).",
+    "endpoint": "python backend/internal_agents/mathserver.py",
+    "transport": "stdio",
+    "category": "Math",
+    "region": "Global",
+    "model": null,
+    "status": "active",
+    "created_at": "2024-01-01T00:00:00Z",
+    "config": {}
+  },
+  {
+    "id": "healthcare-agent-1",
+    "name": "Healthcare Agent",
+    "description": "Handles healthcare-related queries using an LLM backend.",
+    "endpoint": "http://localhost:8000/mcp",
+    "transport": "streamable_http",
+    "category": "Healthcare",
+    "region": "Global",
+    "model": "gemma3:4b",
+    "status": "active",
+    "created_at": "2024-01-01T00:00:00Z",
+    "config": {}
+  }
+] 
